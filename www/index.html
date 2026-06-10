@@ -814,7 +814,7 @@ body.is-offline .dl-btn,body.is-offline #alldl{opacity:.3;pointer-events:none}
     </div>
     <div>
       <div class="hd-name">Music DL</div>
-      <div class="hd-sub">YouTube &rarr; MP3 &middot; 320 kbps &middot; <span id="hd-ver">v__VER__</span></div>
+      <div class="hd-sub">YouTube &rarr; MP3 &middot; 320 kbps &middot; <span id="hd-ver">v1.0.0</span></div>
     </div>
   </div>
   <div class="net-badge on" id="net-badge"><div class="net-dot"></div><span id="net-lbl">En ligne</span></div>
@@ -2017,7 +2017,7 @@ document.addEventListener('keydown',function(e){
 
 /* CHECK FOR UPDATE */
 (function(){
-  var CURRENT='__VER__';
+  var CURRENT='1.0.0';
   var _ready=false;
   function parseVer(v){return v.replace(/^v/,'').split('.').map(Number);}
   function isNewer(a,b){for(var i=0;i<3;i++){if((a[i]||0)>(b[i]||0))return true;if((a[i]||0)<(b[i]||0))return false;}return false;}
